@@ -1,0 +1,106 @@
+
+*{
+	font-family: verdana;
+	background: #1c807f;
+}
+
+div{
+	margin-top: 20px;
+}
+
+h1{
+	font-size: 30px;
+	color: #888888;
+	margin-top: 0px;
+	margin-bottom: 10px
+}
+
+h2{
+	font-size: 16px;
+	color: #1b774b;
+	margin-top: 0px;
+	margin-bottom: 5px
+}
+
+p{
+	font-size: 15px;
+	margin-top: 0px;
+	margin-bottom: 10px;
+}
+
+
+div,h1,h2,p,a{
+	background: white;
+
+}
+
+#rightnav p{
+	background: #eeeeee;
+}
+
+#rightnav h2{
+	background: #eeeeee;
+	font-size: 15px;
+	margin-top: 10px;
+	margin-bottom: 5px;
+
+}
+#leftnav p{
+	font-size: 13px;
+	font-weight: bold;
+	margin-top: 5px;
+	margin-bottom: 12px;
+}
+
+#leftnav h2{
+	font-size: 15px;
+	margin-top: 10px;
+	margin-bottom: 5px;
+}
+
+a:link{
+	color: #1c807f;
+	text-decoration: none;
+}
+
+a:hover{
+	background-color: #bbbbbb;
+}
+
+.content{
+	position: relative;
+	padding: 10px;
+	border-left-width: 3px;
+	border-left-style: solid;
+	border-color: black;
+	margin-left: 170px;
+	margin-right: 200px;
+	margin-bottom: 10px;
+}
+
+#leftnav{
+	position: absolute;
+	padding-top: 0px;
+	padding-right: 10px;
+	padding-bottom: 10px;
+	padding-left: 10px; 
+	top: 0;
+	left: 0;
+	width: 120px;
+	border: 2px dotted black;
+	margin: 20px;
+}
+
+#rightnav{
+	position: absolute;
+	padding-top: 0px;
+	padding-right: 10px;
+	padding-bottom: 10px;
+	padding-left: 10px; 
+	top: 0;
+	right: 0;
+	width: 150px;
+	border: 2px dotted black;
+	margin: 20px;
+	background-color: #eeeeee;
+}

@@ -1,1 +1,2 @@
-# Lab2
+# Repository to upload labs from the web development course.
+

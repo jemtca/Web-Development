@@ -1,0 +1,84 @@
+
+/*
+----------------------------------------------------------------------------
+url("img_navsprites.gif") xOffset yOffset;
+
+since each one of the sprite images in img_navsprites.gif,
+the width and height is fixed in css to just enough 
+space for showing one complete sprite
+*/
+.home		{
+	width:43px;
+	height:44px;
+	/* offset 0px 0px places the image at the top left corner (default) */
+	background:url("../images/img_navsprites.gif") 0px 0px;
+}
+.previous		{
+	width:42px;
+	height:44px;
+	/* offset -47px 0px places the image 
+		-47px on the x axis, shifting the placement by 
+		enough to clear the width of the first sprite image
+		0px on the y axis (default)	
+	*/
+	background:url("../images/img_navsprites.gif") -47px 0px;
+}
+.next		{
+	width:43px;
+	height:44px;
+	/* offset -91x 0px places the image 
+		-91px on the x axis, shifting the placement 
+		enough to clear the first two sprite images
+		0px on the y axis (default)	
+	*/	
+	background:url("../images/img_navsprites.gif") -91px 0px;
+}
+/*
+note that if the background is repeating,
+there are several offset values that can work...
+*/
+#test{
+	width:45px;
+	height:44px;
+	/* offset 0px 0px places the image at the top left corner (default) */
+	background:url("../images/img_navsprites.gif") -268px 0px;
+}
+
+/*
+----------------------------------------------------------------------------
+ url("images/user_sprites.png ") xOffset yOffset;
+
+user_sprites.png is a grid-like structure,
+ so we will need to adjust both the x and y axis
+ to locate each image
+
+ each separate image is 90px * 90px
+*/
+
+#image01{
+	width: 90px;
+	height: 90px;
+	background:url("../images/user_sprites.png") 0px 0px;
+
+	
+}
+#image02{
+	width: 90px;
+	height: 90px;
+	background:url("../images/user_sprites.png") -90px 0px;
+	margin-top: 4px;
+	margin-bottom: 4px;
+	
+}
+#image03{
+	width: 90px;
+	height: 90px;
+	background:url("../images/user_sprites.png") 0px -90px;
+	margin: 4px 0px 4px 0px;
+	
+}
+#image04{
+	width: 90px;
+	height: 90px;
+	background:url("../images/user_sprites.png") -90px -90px;
+}

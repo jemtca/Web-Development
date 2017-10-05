@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Sprites</title>
+		<meta charset="utf-8" />
+		<link href="css/style.css" rel="stylesheet" />
+	</head>
+	<body>
+	<h1>Sprites </h1>
+	<p>Using one larger image instead of several smaller images can result in a more effiecient server/client transaction, since it reduces the number of request/responses that need to occur. See the source code for details...</p>
+	<ol>
+	<li>use an image program like photoshop to create a strip or grid of images. this is also an ideal time to determine the correct offsets</li> 
+	<li>use an HTML tag ('div' or 'p' or etc) any block element</li>
+	<li>define a fixed height and width (large enough to show the image you need to display)</li>
+	<li>use the url and position offset values
+	  for example:
+	  <ul>
+		<li><code>background: url("myimage.jpg") 0 0;</code><br />
+	  places myimage.jpg in the top left corner ( 0 0 )</li>
+		<li><code>background: url("myimage.jpg") -50 0;</code><br />
+	  places myimage.jpg at the top, but shifts the start of the image 50 pixels to the right (offset -50px)</li>
+		<li><code>background: url("myimage.jpg") 50 0;</code><br />
+	  places myimage.jpg at the top, but shifts the start of the image 50 pixels to the left (offset -50px)</li>
+	  </ul>
+		
+
+		</li>
+	</ol>
+
+		<h3>The sprite image in its entirety:</h3>
+		<img src="images/img_navsprites.gif" />
+		<h3>Only showing a portion of the sprite image:</h3>
+<!-- 
+note that it doesnt really matter what kind of tag uses the sprite. 
+as long as it's a block element that will respect width and height declarations
+-->
+		<p class="home"></p>
+		<div class="previous"></div>
+		<h1 class="next"></h1>
+
+		<div id="test"></div>
+		
+<h2>Exercise</h2>
+<p>Obtain the sprite <code>user_sprites.png</code> included with this file. The image is 180px * 180px wide. It consists of 4 square images, each 90px * 90px. Use CSS top correctly position the image as a background, displaying each user icon separately</p>
+		<h3>The sprite image in its entirety:</h3>
+		<img src="images/user_sprites.png" />
+		<h3>Output each sprite image separately:</h3>
+		<div id="image01"></div>
+		<div id="image02"></div>
+		<div id="image03"></div>
+		<div id="image04"></div>
+	</body>
+</html>

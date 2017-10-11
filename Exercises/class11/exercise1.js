@@ -12,4 +12,4 @@ function abbrev_name(name){
   return firstName[0].toUpperCase() + firstName.substring(1,space) + " " + lastName.toUpperCase() + ".";
 }
 
-//console.log(abbrev_name("My name"));
+//console.log(abbrev_name("Robin Singh"));

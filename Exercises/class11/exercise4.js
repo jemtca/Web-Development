@@ -1,4 +1,4 @@
-function capitalize(string){
+function capitalize_Words(string){
   
   var newString = string.substring(0,1).toUpperCase();
   
@@ -15,4 +15,4 @@ function capitalize(string){
   
 }
 
-console.log(capitalize('js string exercises'));
+console.log(capitalize_Words('js string exercises'));

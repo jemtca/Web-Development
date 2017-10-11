@@ -1,4 +1,3 @@
-
 function abbrev_name(name){
   
   var firstName = "", lastName = "", space="";

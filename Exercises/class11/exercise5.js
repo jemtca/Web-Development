@@ -11,8 +11,6 @@ function is_string(string){
   
 }
 
-// console.log(is_string('JavaScript'));
-// true
+// console.log(is_string('JavaScript')); -> true
 
-// console.log(is_string([1,   2,   4,   0]));
-// false
+// console.log(is_string([1,   2,   4,   0])); -> false

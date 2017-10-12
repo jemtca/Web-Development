@@ -10,4 +10,4 @@ function capitalize(string){
   
 }
 
-// console.log(capitalize('js string exercises'));
+// console.log(capitalize('js string exercises')); -> "Js   string   exercises"

@@ -15,4 +15,4 @@ function string_parameterize(string){
   
 }
 
-// console.log(string_parameterize("Robin Singh from USA."));
+// console.log(string_parameterize("Robin Singh from USA.")); -> "robin-singh-from-usa"

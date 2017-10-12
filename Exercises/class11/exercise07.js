@@ -21,11 +21,11 @@ function count(string,word){
   if(word == ""){
      return "[word] parameter is undefined.";
      }
-  else if(word != " "){
-     return times + "white spaces."; //ask to rodrigo
+  else if(word == " "){
+     return spaces + "white spaces."; //ask to rodrigo
      }
   else{
-     return spaces;
+     return times;
    }
 }
 

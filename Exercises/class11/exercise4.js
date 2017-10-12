@@ -15,4 +15,4 @@ function capitalize_Words(string){
   
 }
 
-console.log(capitalize_Words('js string exercises'));
+// console.log(capitalize_Words('js string exercises')); -> "Js   String   Exercises"

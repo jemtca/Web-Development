@@ -21,8 +21,8 @@ function firstHalf(string){
     result = result + string[i];
   }
   
-  return result;
-
+  return string.length % 2 == 0 ? result : "You have introduced a string that is not even.";
+  
 }
 
 //Exercise04

@@ -143,3 +143,15 @@ function lastChars(string1,string2){
 }
 
 //Exercise10
+function middletwo(string){
+  
+  var middle = string.length/2;
+  
+  if(string.length % 2 == 0){
+     return string.charAt(middle-1) + string.charAt(middle);
+   }
+  else{
+    console.log("You have introduced a string that is not even.");
+  }
+  
+}

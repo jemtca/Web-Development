@@ -99,6 +99,26 @@ function deFront(string){
 }
 
 //Exercise08
+function withoutX2(string){
+  
+  var finalString = "";
+  
+  if(string.charAt(0).toLowerCase() == "x" && string.charAt(1).toLowerCase() == "x"){
+     finalString = string.slice(2);
+  }
+  else if(string.charAt(0).toLowerCase() == "x"){
+    finalString = string.slice(1);
+  }
+  else if(string.charAt(1).toLowerCase() == "x"){
+    finalString = string.charAt(0) + string.slice(2);
+  }
+  else{
+    finalString = string;
+  }
+     
+  return finalString;
+  
+}
 
 //Exercise09
 

@@ -1,8 +1,7 @@
 //Exercise01
 function Abba(string1,string2){
   
-  return (string1.length == 0 && string2.length == 0) ||
-  (string1.length == 0) || (string2.length == 0) ?
+  return string1.length == 0 || (string2.length == 0) ?
   "Empty string/s." : string1 + string2 + string2 + string1;
  
 }

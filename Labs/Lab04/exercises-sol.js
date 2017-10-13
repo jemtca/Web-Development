@@ -121,5 +121,25 @@ function withoutX2(string){
 }
 
 //Exercise09
+function lastChars(string1,string2){
+  
+  var finalString = "";
+  
+  if(string1.length == 0 && string2.length == 0){
+    finalString = "@@";
+  }
+  else if(string1.length == 0){
+    finalString = "@" + string2.slice(-1);
+  }
+  else if(string2.length == 0){
+    finalString =  string1.charAt(0) + "@";
+  }
+  else{
+    finalString = string1.charAt(0) + string2.slice(-1);   
+  }
+  
+  return finalString;
+  
+}
 
 //Exercise10

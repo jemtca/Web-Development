@@ -106,7 +106,7 @@ function deFront(string){
     result = string.slice(2);
   }
   
-  return result;
+  return string.length != 0 ? result : "Empty string.";
   
 }
 

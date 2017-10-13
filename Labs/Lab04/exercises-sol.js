@@ -5,7 +5,6 @@ function Abba(string1,string2){
  
 }
 
-
 //Exercise02
 function endsLy(string){
   
@@ -47,8 +46,34 @@ function right2(string){
 }
 
 //Exercise05
+function conCat(string1,string2){
+  
+  var finalString = "";
+  
+  if(string1.slice(-1) == string2.charAt(0)){
+    finalString = string1 + string2.slice(1);
+     }
+  else{
+    finalString = string1.concat(string2);
+  }
+  
+  return finalString;
+  
+}
 
 //Exercise06
+function frontAgain(string){
+  
+  var result = false;
+  var temp = string.charAt(0) + string.charAt(1);
+  
+  if(temp.toLowerCase() == string.slice(-2).toLowerCase()){
+     result = true;
+   }
+  
+  return result;
+     
+}
 
 //Exercise07
 

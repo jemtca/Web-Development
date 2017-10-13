@@ -29,7 +29,7 @@ function firstHalf(string){
     result = result + string[i];
   }
   
-  return string.length % 2 == 0 ? 
+  return string.length % 2 == 0 ?
   result : "You have introduced a string that is not even.";
   
 }
@@ -69,7 +69,8 @@ function conCat(string1,string2){
     finalString = string1.concat(string2);
   }
   
-  return finalString;
+  return string1.length == 0 || string2.length == 0 ?
+  "Empty string/s." : finalString;
   
 }
 

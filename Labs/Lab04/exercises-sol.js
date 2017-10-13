@@ -76,6 +76,27 @@ function frontAgain(string){
 }
 
 //Exercise07
+function deFront(string){
+  
+  var result = "";
+  var tempChar = "";
+  
+  if(string.charAt(0).toLowerCase() == "a" && string.charAt(1).toLowerCase() == "b"){
+     result = string;
+  }
+  else if(string.charAt(0).toLowerCase() == "a"){
+    result = string.charAt(0) + string.slice(2);
+  }
+  else if(string.charAt(1).toLowerCase() == "b"){
+    result = string.charAt(1) + string.slice(2);
+  }
+  else{
+    result = string.slice(2);
+  }
+  
+  return result;
+  
+}
 
 //Exercise08
 

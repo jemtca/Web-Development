@@ -1,7 +1,7 @@
 //Exercise01
 function Abba(string1,string2){
   
-  return string1.length == 0 || (string2.length == 0) ?
+  return string1.length == 0 || (string2.length == 0) ? 
   "Empty string/s." : string1 + string2 + string2 + string1;
  
 }
@@ -28,7 +28,7 @@ function firstHalf(string){
     result = result + string[i];
   }
   
-  return string.length % 2 == 0 ?
+  return string.length % 2 == 0 ? 
   result : "You have introduced a string that is not even.";
   
 }
@@ -68,7 +68,7 @@ function conCat(string1,string2){
     finalString = string1.concat(string2);
   }
   
-  return string1.length == 0 || string2.length == 0 ?
+  return string1.length == 0 || string2.length == 0 ? 
   "Empty string/s." : finalString;
   
 }
@@ -150,7 +150,8 @@ function lastChars(string1,string2){
     finalString = string1.charAt(0) + string2.slice(-1);   
   }
   
-  return finalString;
+  return string1.length == 0 && string2.length == 0 ? 
+  "Empty string/s." : finalString;
   
 }
 
@@ -160,7 +161,7 @@ function middletwo(string){
   var finalString = "";
   var middle = string.length/2;
   
-  return string.length % 2 == 0 ?
+  return string.length % 2 == 0 ? 
   string.charAt(middle-1) + string.charAt(middle) : 
   "You have introduced a string that is not even.";
   

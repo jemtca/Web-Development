@@ -128,7 +128,7 @@ function withoutX2(string){
     finalString = string;
   }
      
-  return finalString;
+  return string.length != 0 ? finalString : "Empty string.";
   
 }
 
@@ -160,7 +160,7 @@ function middletwo(string){
   var finalString = "";
   var middle = string.length/2;
   
-  return string.length % 2 == 0 ? 
+  return string.length % 2 == 0 ?
   string.charAt(middle-1) + string.charAt(middle) : 
   "You have introduced a string that is not even.";
   

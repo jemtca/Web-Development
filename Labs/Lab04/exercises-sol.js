@@ -21,7 +21,8 @@ function firstHalf(string){
     result = result + string[i];
   }
   
-  return string.length % 2 == 0 ? result : "You have introduced a string that is not even.";
+  return string.length % 2 == 0 ? 
+  result : "You have introduced a string that is not even.";
   
 }
 
@@ -148,6 +149,8 @@ function middletwo(string){
   var finalString = "";
   var middle = string.length/2;
   
-  return string.length % 2 == 0 ? string.charAt(middle-1) + string.charAt(middle) : "You have introduced a string that is not even.";
+  return string.length % 2 == 0 ? 
+  string.charAt(middle-1) + string.charAt(middle) : 
+  "You have introduced a string that is not even.";
   
 }

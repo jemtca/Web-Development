@@ -83,7 +83,7 @@ function frontAgain(string){
      result = true;
    }
   
-  return result;
+  return string.length != 0 ? result : "Empty string.";
      
 }
 

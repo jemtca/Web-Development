@@ -10,7 +10,13 @@ function Abba(string1,string2){
 //Exercise02
 function endsLy(string){
   
-  return string.toLowerCase().endsWith("ly") ? true : false;
+  var result = false;
+  
+  if(string.toLowerCase().endsWith("ly")){
+    result = true;
+  }
+  
+  return string != 0 ? result : "Empty string.";
   
 }
 

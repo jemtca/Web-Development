@@ -37,20 +37,23 @@ function firstHalf(string){
 //Exercise04
 function right2(string){
   
+  var finalString = "";
   var lastTwoChars = string.slice(-2); // end -> start, 2 positions
   
   if(string.length < 2){
-     return "The string is too short.";
+     finalString = "The string is too short.";
   }
   else if(string.length == 2){
-    return string[1] + string[0];
+    finalString = string[1] + string[0];
   }
   else{
     // finalString = lastTwoChars + string.substring(0,string.length - 2);
     // finalString = lastTwoChars + string.substr(0,string.length - 2);
     // finalString = lastTwoChars + string.slice(0,string.length - 2);
-    return lastTwoChars + string.slice(0,string.length - 2);
+    finalString = lastTwoChars + string.slice(0,string.length - 2);
   }
+  
+  return finalString;
   
 }
 

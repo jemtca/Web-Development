@@ -1,8 +1,8 @@
 //Exercise01
 function Abba(string1,string2){
   
-  return string1.length == 0 || (string2.length == 0) ? 
-  "Empty string/s." : string1 + string2 + string2 + string1;
+  return string1.length != 0 && (string2.length != 0) ? 
+  string1 + string2 + string2 + string1 : "Empty string/s.";
  
 }
 
@@ -61,15 +61,21 @@ function conCat(string1,string2){
   
   var finalString = "";
   
-  if(string1.slice(-1) == string2.charAt(0)){
+  if(string1.length == 0){
+     finalString = string2;
+  }
+  else if(string2.length == 0){
+    finalString = string1;
+  }
+  else if(string1.slice(-1) == string2.charAt(0)){
     finalString = string1 + string2.slice(1);
-     }
+  }
   else{
     finalString = string1.concat(string2);
   }
   
-  return string1.length == 0 || string2.length == 0 ? 
-  "Empty string/s." : finalString;
+   return string1.length != 0 || string2.length != 0 ? 
+   finalString : "Empty strings.";
   
 }
 

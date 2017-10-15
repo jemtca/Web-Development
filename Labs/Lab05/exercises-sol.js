@@ -29,6 +29,20 @@ function reverse3(array){
 }
 
 //Exercise03
+function has23(array){
+  
+  var result = false;
+  
+  for(i = 0; i < array.length; i++){
+    if(array[i] == 2 || array[i] == 3){
+      result = true;
+    }
+  }
+  
+  return array.length == 2 ? result : 
+  "Array lenght is not 2."
+  
+}
 
 //Exercise04
 

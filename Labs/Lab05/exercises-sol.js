@@ -117,6 +117,48 @@ function swapEnds(array){
 }
 
 //Exercise07
+function unlucky1(array){
+  
+  var result = false;
+  var length = array.length;
+  var firstOne = array[0];
+  var secondOne = array[1];
+  var thirdOne = array[2];
+  var last3 = array[length - 3];
+  var last2 = array[length - 2];
+  var last1 = array[length - 1];
+  
+  if(length == 2){
+    if(firstOne == 1 && secondOne == 3){
+      result = true;    
+    }
+  }
+  else if (length == 3){
+    if((firstOne == 1 && secondOne == 3) || 
+    (secondOne == 1 && thirdOne == 3)){
+      result = true;    
+    }
+  }
+  else if(length == 4){
+    if((firstOne == 1 && secondOne == 3) || 
+    (secondOne == 1 && thirdOne == 3) || 
+    (last2 == 1 && last1 == 3)){
+      result = true;
+    }
+  }
+  else{
+    if((firstOne == 1 && secondOne == 3) || 
+    (secondOne == 1 && thirdOne == 3) || 
+    (last3 == 1 && last2 == 3) || 
+    (last2 == 1 && last1 == 3)){
+      result = true;
+    }
+   }
+  
+  return length >= 2 ? result : 
+  "The array length will be at least 2.";
+  
+}
 
 //Exercise08
 

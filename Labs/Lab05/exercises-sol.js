@@ -161,6 +161,25 @@ function unlucky1(array){
 }
 
 //Exercise08
+function front11(array1,array2){
+  
+  var finalArray = new Array();
+  
+  if(array1.length == 0){
+    finalArray[0] = array2[0];   
+  }
+  else if(array2.length == 0){
+    finalArray[0] = array1[0];
+   }
+  else{
+    finalArray[0] = array1[0];
+    finalArray[1] = array2[0];
+  }
+  
+  return array1.length > 0 || array2.length > 0 
+  ? finalArray : "Empty arrays.";
+  
+}
 
 //Exercise09
 

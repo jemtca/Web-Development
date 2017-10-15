@@ -70,6 +70,26 @@ function fix23(array){
 }
 
 //Exercise05
+function maxTriple(array){
+  
+  var result = 0;
+  var firstOne = array[0];
+  var middleOne = array[(array.length -1) /2]
+  var lastOne = array[array.length - 1];
+  
+  if(firstOne > middleOne && firstOne > lastOne){
+    result = firstOne;
+  }
+  else if(lastOne > middleOne && lastOne > firstOne){
+    result = lastOne;     
+  }
+  else{
+    result = middleOne;
+  }
+  
+  return array.length % 2 != 0 ? result : "Even array."
+  
+}
 
 //Exercise06
 

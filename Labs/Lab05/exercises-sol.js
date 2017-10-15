@@ -92,6 +92,29 @@ function maxTriple(array){
 }
 
 //Exercise06
+function swapEnds(array){
+  
+  var finalArray = new Array(array.length);
+  var length = array.length;
+  var firstOne = array[0];
+  var lastOne = array[length - 1];
+  
+  if(length == 1){
+     finalArray[0] = array[0];
+   }
+   else{
+    finalArray[0] = lastOne;
+    finalArray[length -1] = firstOne;
+  
+    for(i = 1; i < length -1; i++){
+      finalArray[i] = array[i];
+    }
+  }
+  
+  return array.length >= 1 ? finalArray : 
+  "The array length have to be at least 1."
+  
+}
 
 //Exercise07
 

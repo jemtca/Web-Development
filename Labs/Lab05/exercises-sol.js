@@ -45,6 +45,29 @@ function has23(array){
 }
 
 //Exercise04
+function fix23(array){
+  
+  var finalArray = new Array(3);
+  var tempIndex = 1;
+  
+  finalArray[0] = array[0];
+  
+  for(i = 0; i < array.length; i++){
+    if(i < 2){
+      if(array[i] == 2 && array[i+1] == 3){
+        finalArray[tempIndex] = 0; 
+      }
+      else{
+        finalArray[tempIndex] = array[tempIndex];
+      }
+      tempIndex++;
+    }
+  }
+  
+  return array.length == 3 ? finalArray : 
+  "Array lenght is not 3."
+  
+}
 
 //Exercise05
 

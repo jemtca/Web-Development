@@ -217,6 +217,25 @@ function isEverywhere(array,element){
 //Exercise10
 
 //Exercise11
+function twoTwo(array){
+  
+  var result = false;
+  var numbersOfTwo = 0;
+  
+  if(array.length >= 2 && array[array.length - 1] != 2){
+     for(i = 0; i < array.length - 1; i++){
+       if(array[i] == 2 && array[i+1] == 2){
+          numbersOfTwo++;
+          }
+     }
+      if(numbersOfTwo % 2){
+        result = true;
+      }
+  }
+  
+  return array.length != 0 ? result : "Empty array.";
+  
+}
 
 //Exercise12
 function shiftLeft(array){

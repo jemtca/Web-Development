@@ -239,6 +239,16 @@ function shiftLeft(array){
 }
 
 //Exercise13
+function evenOdd(array){
+  
+  var finalArray  = new Array(array.length);
+  
+  finalArray = array.sort();
+  
+  return array.length > 0 ? finalArray : 
+  "Empty array.";
+  
+}
 
 //Exercise14
 

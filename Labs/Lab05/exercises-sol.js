@@ -233,8 +233,7 @@ function shiftLeft(array){
   
   finalArray[newIndex] = firstElement;
   
-  return array.length > 0 ? finalArray : 
-  "Empty array.";
+  return array.length > 0 ? finalArray : "Empty array.";
   
 }
 
@@ -245,11 +244,36 @@ function evenOdd(array){
   
   finalArray = array.sort();
   
-  return array.length > 0 ? finalArray : 
-  "Empty array.";
+  return array.length > 0 ? finalArray : "Empty array.";
   
 }
 
 //Exercise14
 
 //Exercise15
+function countClumps(array){
+  
+  var number = 0;
+  var same = true;
+ 
+  
+  for(i = 0; i < array.length - 1 && same; i++){
+    if(array[0] != array[i+1]){
+      same = false;
+    }  
+  }
+  
+  if(same){
+    number = 1;
+  }
+  else{
+    for(i = 0; i < array.length; i++){
+      if(array[i] == array[i+1]){
+      number++;
+      }
+    } 
+  } 
+  
+  return array.length > 0 ? number : "Empty array.";
+  
+}

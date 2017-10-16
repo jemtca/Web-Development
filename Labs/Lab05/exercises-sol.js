@@ -219,6 +219,24 @@ function isEverywhere(array,element){
 //Exercise11
 
 //Exercise12
+function shiftLeft(array){
+  
+  var finalArray = new Array(array.length);
+  var newIndex = 0;
+  
+  var firstElement = array[0];
+  
+  for(i = 1; i < array.length; i++){
+    finalArray[newIndex] = array[i];
+    newIndex++;
+  }
+  
+  finalArray[newIndex] = firstElement;
+  
+  return array.length > 0 ? finalArray : 
+  "Empty array.";
+  
+}
 
 //Exercise13
 

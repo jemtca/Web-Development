@@ -182,6 +182,37 @@ function front11(array1,array2){
 }
 
 //Exercise09
+function isEverywhere(array,element){
+  
+  var result = true;
+  var tempArray = new Array;
+  var found = false;
+  
+  var newIndex = 0;
+  
+  for(i = 0; i < array.length/2; i++){
+    if(array[newIndex] == element || 
+       array[newIndex+1] == element){
+      tempArray[i] = true;
+      
+    }
+    else{
+      tempArray[i] = false;
+    }
+    newIndex = newIndex + 2;
+  }
+  
+  for(i = 0; i < tempArray.length && found == false; i++){
+    if(tempArray[i] == false){
+      found = true;
+      result = false;
+    }
+  }
+  
+  return array.length == 0 || element == undefined ? 
+    "Wrong parameter/s." : result;
+  
+}
 
 //Exercise10
 

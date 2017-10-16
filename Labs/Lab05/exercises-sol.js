@@ -249,6 +249,30 @@ function evenOdd(array){
 }
 
 //Exercise14
+function fizzBuzz(start,end){
+  
+  var finalArray = new Array();
+  
+  for(i = 1; i < end; i++){
+    if(i % 3 == 0 ){
+       finalArray[i-1] = "Fizz";
+    }
+    else if(i % 5 == 0){
+      finalArray[i-1] = "Buzz"; 
+    }
+    else if(i % 3 == 0 && i % 5 == 0){
+      finalArray[i-1] = "FizzBuzz";
+    }
+    else{
+      finalArray[i-1] = i;
+    }
+  }
+  
+  return start <= 0 || end <= 0 || 
+  start == undefined || end == undefined ? 
+  "Wrong parameter/s." : finalArray;
+  
+}
 
 //Exercise15
 function countClumps(array){

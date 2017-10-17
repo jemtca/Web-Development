@@ -215,6 +215,27 @@ function isEverywhere(array,element){
 }
 
 //Exercise10
+function tenRun(array){
+  
+  var finalArray = new Array(array.length);
+  var temp = 0;
+  
+  for(i = 0; i < array.length; i++){
+    if(array[i] % 10 == 0){
+       temp = array[i];
+    }
+    if(temp == 0){
+      finalArray[i] = array[i];
+    }
+    else{
+      finalArray[i] = temp;
+    }
+    
+  }
+  
+  return array.length > 0 ? finalArray : "Empty array.";
+  
+}
 
 //Exercise11
 function twoTwo(array){

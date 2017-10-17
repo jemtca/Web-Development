@@ -306,16 +306,19 @@ function countClumps(array){
     }  
   }
   
-  if(same){
+  if(array.length == 1){
+    number = 0;
+  }
+  else if(same){
     number = 1;
   }
   else{
-    for(i = 0; i < array.length; i++){
-      if(array[i] == array[i+1]){
-      number++;
+    for(i = 0; i < array.length - 1; i++){
+      if(array[i] == array[i+1] && array[i] != array[i+2]){
+        number++;
       }
-    } 
-  } 
+     }
+  }
   
   return array.length > 0 ? number : "Empty array.";
   

@@ -272,18 +272,18 @@ function fizzBuzz(start,end){
   
   var finalArray = new Array();
   
-  for(i = 1; i < end; i++){
-    if(i % 3 == 0 ){
-       finalArray[i-1] = "Fizz";
+  for(i = start; i < end; i++){
+    if(i % 3 == 0 && i % 5 == 0){
+       finalArray[i-start] = "FizzBuzz";
     }
-    else if(i % 5 == 0){
-      finalArray[i-1] = "Buzz"; 
+    else if(i % 3 == 0){
+      finalArray[i-start] = "Fizz";
     }
-    else if(i % 3 == 0 && i % 5 == 0){
-      finalArray[i-1] = "FizzBuzz";
+    else if(i % 5){
+      finalArray[i-start] = "Buzz";
     }
     else{
-      finalArray[i-1] = i;
+      finalArray[i-start] = "" + i;
     }
   }
   

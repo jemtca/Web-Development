@@ -259,11 +259,19 @@ function shiftLeft(array){
 //Exercise13
 function evenOdd(array){
   
-  var finalArray  = new Array(array.length);
+  var finalArray = new Array();
   
-  finalArray = array.sort();
+  for(i = 0; i < array.length; i++){
+    if(array[i] % 2 == 0){
+      finalArray.unshift(array[i]);
+    }
+    else{
+      finalArray.push(array[i]);
+    }
+    
+  }
   
-  return array.length > 0 ? finalArray : "Empty array.";
+ return array.length >0 ? finalArray : "Empty array.";
   
 }
 

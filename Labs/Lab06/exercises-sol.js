@@ -1,4 +1,13 @@
-//Q1
+//Q1 - a
+result = dogdeer
+
+//Q1 - b
+
+//Q1 - c
+
+//Q3 - d
+
+//Q4 - e
 
 //Q2
 function sumArray(array,number){

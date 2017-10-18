@@ -1,3 +1,3 @@
 # Web-Development
 
-Repository to upload exercises and labs from the web development course.
+Repository to upload examples, exercises and labs from the web development course.

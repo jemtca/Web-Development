@@ -33,6 +33,9 @@ function concatenatingArrays(array1,array2){
 children = concatenatingArrays(boys,girls);
 
 //Q1 - c
+Yes, the loop will be executed without any error. (three times, when i is equal to 2, 3 and 4)
+
+The array "arr" will contain five elements "[20,30,4,9,16]".
 
 //Q3 - d
 

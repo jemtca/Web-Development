@@ -61,6 +61,7 @@ for(var i = 0; i < 9; i++){
 }
 
 //Q4 - e
+When that code fragment finishs (four iterations), the value of mi = 1 and m = 9.
 
 //Q2
 function sumArray(array,number){

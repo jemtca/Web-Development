@@ -38,6 +38,27 @@ Yes, the loop will be executed without any error. (three times, when i is equal 
 The array "arr" will contain five elements "[20,30,4,9,16]".
 
 //Q3 - d
+The value of sum when the loop terminates is 280.
+
+//option 1
+var arr = [10,20,30,40,50,60,70,80,90];
+var sum = 0;
+
+for(var i = 0; i < 8; i++){
+  sum = sum + arr[i];
+}
+
+sum = sum + 10;
+
+//option 2
+var arr = [10,20,30,40,50,60,70,80,90];
+var sum = 0;
+
+for(var i = 0; i < 9; i++){
+  if(i != 7){
+    sum = sum + arr[i];
+  }
+}
 
 //Q4 - e
 

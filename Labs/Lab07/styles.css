@@ -1,1 +1,8 @@
 
+@IMPORT URL(normalize.css);
+@IMPORT URL(https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.0/css/bulma.min.css);
+/*@IMPORT URL(https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css);*/
+
+a {
+	color: inherit;
+}

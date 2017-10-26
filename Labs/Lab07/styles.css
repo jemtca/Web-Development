@@ -42,7 +42,7 @@ body {
 
 .content {
   padding: 16px;
-  background-color: black;
+  background-color: skyblue;
 }
 
 .sticky {
@@ -81,4 +81,40 @@ body {
     text-align: left;
   }
 
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    height: 32px;
+    bottom: 0;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    font-size: 26px;
+}
+
+#who,#what,#how,#where,#contact{
+    height: 421px;
+}
+
+#page0{
+ background-color: aqua;   
+}
+
+#page1{
+    background-color: aquamarine;
+}
+
+#page2{
+    background-color: cadetblue;
+}
+
+#page3{
+    background-color: cornflowerblue;
+}
+
+#page4{
+    background-color: darkcyan;
 }

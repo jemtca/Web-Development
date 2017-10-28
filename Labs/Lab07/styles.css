@@ -13,15 +13,11 @@ body {
   padding: 30px;
   text-align: center;
   color: #cfcfcf;
-  /*color: #00a7f7;*/
-  /*background-color: PowderBlue;*/
 }
 
-.navbar { /* #navbar */
+.navbar {
   overflow: hidden;
-  /*background-color: #333;*/
   background-color: #696969;
-  /*background-color: #00a7f7;*/
 }
 
 .navbar > div{
@@ -29,25 +25,22 @@ body {
   margin: 0px auto; 
 }
 
-.navbar a { /* #navbar a */
+.navbar a {
   float: left;
   display: block;
   color: #f2f2f2;
   text-align: center;
   padding: 14px 16px;
-/*  margin-left: 45px;
-  margin-right: 45px;*/
   text-decoration: none;
   font-size: 17px;
 }
 
-.navbar a:hover { /* #navbar a:hover */
+.navbar a:hover {
   background-color: #cfcfcf;
   color: #2a2a2a;
 }
 
-.navbar a.active { /* #navbar a.active  */
-  /*background-color: #0099cc;*/
+.navbar a.active {
   background-color: #cfcfcf;
   color: white;
 }
@@ -66,7 +59,6 @@ body {
 .sticky + .content {
   padding-top: 60px;
 }
-
 
 .navbar .icon {
   display: none;
@@ -128,10 +120,6 @@ body {
 
 html{
   background-color: #2a2a2a;
-/*  background-image: url("header.jpg");
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  background-size: contain;*/
 }
 
 input[type=text], textarea{
@@ -203,7 +191,6 @@ input[type=reset]:hover {
     color: white;
 }
 
-
 .container {
     border-radius: 5px;
     padding: 20px;
@@ -232,5 +219,8 @@ input[type=reset]:hover {
     .col-25, .col-75, input[type=submit], input[type=reset] {
         width: 100%;
         margin-top: 0;
+    }
+    .section p{
+      font-size: 20px;
     }
 }

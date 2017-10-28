@@ -1,0 +1,116 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+  <title>Jesus' Portfolio</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body onscroll="myFunction()">
+
+  <div class="header">
+
+    <h1>Hey, I'm Jesús ;-)</h1>
+    <p>Prototype for a future portfolio</p>
+
+  </div>
+
+  <div class="navbar" id="myTopnav">
+    <div>
+      <a href="who.html">Who am I?</a>
+      <a href="what.html">What kind of work I do</a>
+      <a href="how.html">How I do that work</a>
+      <a href="where.html">Where I want to go next</a>
+      <a class="active">Contact me!</a>
+      <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction2()">&#9776;</a>
+    </div>
+  </div>
+
+  <section>
+
+    <div class="container">
+      <form method="post" action="form_destination.php">
+        
+        <div class="row">
+
+          <div class="col-25">
+          <label for="name">First Name</label>
+          </div>
+
+          <div class="col-75">
+          <input type="text" id="name" name="name" placeholder="Your name..." required tabindex="1">
+          </div>
+
+        </div>
+
+        <br>
+        
+        <div class="row">
+        
+          <div class="col-25">
+          <label for="email">Email</label>
+          </div>
+        
+          <div class="col-75">
+          <input type="email" id="email" name="email" placeholder="Your email..." required tabindex="2">
+          </div>
+
+        </div>
+
+        <br>
+
+        <div class="row">
+
+          <div class="col-25">
+          <label for="phone">Phone Number</label>
+          </div>
+
+          <div class="col-75">
+          <input type="tel" id="phone" name="phone" pattern="^(\+\d{1,2}\s?)?\(?\d{2,3}\)?[\s.-]?\d{3,5}?[\s.-]?\d{4}$" placeholder="Your phone number..." required tabindex="3">
+
+          </div>
+          
+        </div>
+
+        <br>  
+
+        <div class="row">
+
+          <div class="col-25">
+            <label for="subject">Message</label>
+          </div>
+
+          <div class="col-75">
+            <textarea id="message" name="message" placeholder="Enter your message..." required tabindex="4" style="height:200px"></textarea>
+          </div>
+
+        </div>
+        
+        <br><br>
+
+        <div class="row">
+          <input type="submit" value="Submit">
+          <br><br>
+          <input type="reset" value="Reset">
+        </div>
+
+      </form>
+    </div>
+  
+  </section>
+
+  <script src="portfolio.js"></script>
+
+  <footer class="footer">
+    <p id="p1">&copy; 2017 Jesus Mata Camacho. All rights reserved.</p>
+    <a id="a1" href="https://github.com/jemtca" target="_blank">GitHub</a>
+  </footer>
+
+</body>
+
+</html>
